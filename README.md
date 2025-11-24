@@ -1,8 +1,8 @@
-**Plant status check 
-***Ciulinca Andra Stefania - 334CA
+Plant status check 
+Ciulinca Andra Stefania - 334CA
 
 
-***Introducere
+Introducere
 
 
 Dispozitiv pentru a asigura conditiile optime pentru plante (temperatura aerului, umiditate in sol, lumina). Daca toate conditiile sunt implinite, feedback ul este indicat pozitiv pe ecran, altfel se afiseaza conditiile esuate. 
@@ -10,12 +10,11 @@ Dispozitiv pentru a asigura conditiile optime pentru plante (temperatura aerului
 Scopul proiectului este de a crea un dispozitiv autonom de monitorizare a plantelor, util pentru persoane care doresc să asigure automat condițiile optime de mediu pentru plantele lor, fără a verifica manual fiecare factor.
 
 
-
-***Descriere
+Descriere
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d57ae068-8f81-45ed-8dbb-0543d8b4cb7e" />
 
 
-***Hardware design 
+Hardware design 
 Lista de piese:
   *  LCD 1602 cu interfata I2C si Backlight Galben-Verde - [[https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/62-lcd-1602-cu-interfata-i2c-si-backlight-galben-verde.html?search_query=lcd+i2c&results=17|External Link]]
   *  Senzor de temperatura si umiditate a aerului - [[https://www.optimusdigital.ro/ro/senzori-senzori-de-temperatura/584-senzor-de-temperatura-dht11.html?search_query=senzor+temperatura&results=253|External Link]]
@@ -46,7 +45,7 @@ Descrierea legăturilor făcute și a pinilor utilizați:
       * Am facut si un divizor de tensiune folosind o tensiune de 1kohm conectata la pinul analog A3 (firul albastru)
 
 
-***Schema Hardware
+Schema Hardware
 
 <img width="1850" height="835" alt="image" src="https://github.com/user-attachments/assets/821b47b4-4690-4a52-b72f-eb34fcc5fd40" />
 
@@ -55,7 +54,7 @@ Descrierea legăturilor făcute și a pinilor utilizați:
 In schema atasata senzorul de temperatura nu este DHT(cel folosit in implementare), dar conectarea este facuta conform schemei reale, cu DHT.
 
 
-***Implementare
+Implementare
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/1cc157fd-76ba-4b30-8495-d3272c779eea" />
 
@@ -64,7 +63,7 @@ Pe ecran se afiseaza parametrii care nu sunt respecta conditiile impuse exemplu:
 
 
 
-***Software design 
+Software design 
 Descrierea codului aplicaţiei (firmware):
   * Mediu de dezvoltare: Arduino IDE
   * Librării şi surse 3rd-party: “Wire.h”, “LiquidCrystal_I2C.h”
@@ -173,7 +172,7 @@ Afișarea pe LCD se face doar când este nevoie, evitând suprascrieri inutile.
 UART implementat manual fără Serial.begin(), pentru compatibilitate cu hardware custom.
 
 
-===== Rezultate obtinute =====
+Rezultate obtinute 
 
 [[https://github.com/andraciuli/Plant-Status-Check|GitHub - codul complet]]
 
@@ -181,13 +180,13 @@ UART implementat manual fără Serial.begin(), pentru compatibilitate cu hardwar
 
 
 
-===== Resurse =====
+Resurse
 [[https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf|Datasheet Arduino]]
 [[https://www.instructables.com/Arduino-Soil-Moisture-Sensor/|Senzor sol]]
 [[https://www.optimusdigital.ro/ro/optoelectronice-lcd-uri/62-lcd-1602-cu-interfata-i2c-si-backlight-galben-verde.html?search_query=lcd+1602&results=17|LCD1602 cu interfata I2C]]
 
 
-===== Jurnal =====
+Jurnal
 
   * 11.05 - montare si testare senzor de temperatura si umiditate sol + testare ecran LCD 1602 cu interfata I2C
   * 13.05 - montare si testare fotorezistor, incheiere schema hardware
